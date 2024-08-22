@@ -1,34 +1,87 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rinterio</title>
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://kit.fontawesome.com/83ae13a96c.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-    <style>
-      .manrope{
-        font-family: "Manrope", sans-serif;
-      }
-    </style>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              clifford: '#da373d',
-            }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rinterio</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/83ae13a96c.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <style>
+    .manrope {
+      font-family: "Manrope", sans-serif;
+    }
+  </style>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
           }
         }
       }
-    </script>
+    }
+  </script>
 </head>
+
 <body class="manrope">
-    <button class="btn">click me</button>
-    <h1 class="text-8xl">hello manrope</h1>
+  <header class="bg-white">
+    <!-- navbar section  -->
+    <div class="navbar bg-base-100 w-11/12 mx-auto my-6 sm:my-13">
+      <div class="navbar-start">
+        <a class="text-2xl flex gap-2"><i class="fa-solid fa-arrow-right bg-[#ABEF5F] -rotate-45 p-2 rounded-3xl"></i>
+          <span class="text-4xl font-extrabold">Rinterio</span>
+        </a>
+      </div>
+      <div class="navbar-center hidden lg:flex lg:mr-[80px]">
+        <ul class="menu menu-horizontal px-1 text-base opacity-80">
+          <li class="font-extrabold"><a>Home</a></li>
+          <li> <a>Services</a></li>
+          <li><a>Portfolio</a></li>
+          <li> <a>Blogs</a></li>
+          <li><a>Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end flex gap-5">
+        <i class=" btn fa-solid fa-magnifying-glass bg-white p-4 rounded-3xl border hidden sm:block w-12 h-12"></i>
+        <i class=" btn fa-solid fa-cart-shopping bg-white p-4 rounded-3xl border hidden sm:block w-12 h-12"></i>
+        <button class="btn bg-[#ABEF5F] rounded-3xl flex hidden sm:block"><span class="font-extrabold text-xl mx-2">Book
+            Consult</span>
+          <i class="fa-solid fa-arrow-right bg-black text-white -rotate-45 p-2 rounded-3xl"></i></button>
+        <i class="fa-solid fa-bars  bg-white p-4 rounded-3xl border lg:hidden w-12 h-12"></i>
+      </div>
+    </div>
+    <!-- banner section  -->
+    <div class="w-11/12 mx-auto text-center grid justify-center gap-6">
+      <div class="mx-auto block w-[50%]">
+        <img src="./assets/banner.png" alt="">
+      </div>
+      <div>
+        <h1 class="text-6xl font-black my-6 leading-tight">A barn house of this design has a <br> striking appearance</h1>
+        <p class="font-medium">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal <br> accents, and large windows that flood the space with natural light.</p>
+      </div>
+      <div class="grid justify-center">
+        <button class="btn bg-[#ABEF5F80] rounded-3xl flex hidden sm:block"><span class="font-extrabold text-xl mx-2">View Details</span>
+        <i class="fa-solid fa-arrow-right bg-[#ABEF5F] text-black -rotate-45 p-2 rounded-3xl"></i></button>
+      </div>
+
+
+    </div>
+  </header>
+  <main>
+
+
+
+  </main>
+  <footer>
+
+  </footer>
+
 </body>
+
 </html>
